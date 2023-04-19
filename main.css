@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: black;
+	font-family: 'Syne', sans-serif;
+}
+
+nav {
+	height: 65px;
+	background-color: transparent;
+	line-height: 65px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+li {
+	list-style-type: none;
+}
+
+nav li a {
+	padding: 0 35px;
+}
+
+.link {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-family: 'Syne', sans-serif;
+}
+
+.link:hover {
+	cursor: none;
+}
+
+.link,
+.link::after,
+.link::before {
+	transition: 0.3s;
+}
+
+.style::before,
+.style::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	bottom: 0;
+	border-bottom: 1px solid white;
+}
+
+.style::before {
+	right: 50%;
+}
+
+.style::after {
+	left: 50%;
+}
+
+.style:hover::before,
+.style:hover::after {
+	width: 50%;
+}
+
+.footer {
+	height: 85px;
+	background-color: rgb(8, 19, 4);
+	line-height: 90px;
+	color: white;
+	text-align: center;
+}
+
+.main-image {
+	position: relative;
+	background-image: url(./img/green-4183977_1920.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+}
+
+.main-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -10;
+}
+
+.main-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	z-index: 10;
+}
+
+.first {
+	font-size: 40px;
+	color: white;
+
+	animation: fade 9s;
+}
+
+.second {
+	font-size: 40px;
+	color: white;
+
+	animation: fade 11s;
+}
+
+.info {
+	height: 100vh;
+	background-image: url(./img/trees-large-shade.png);
+	position: relative;
+}
+
+div.text-over-trees {
+
+	position: absolute;
+	background-color:transparent;
+	font-size: 25px;
+	padding: 200px 300px 0px 300px;
+	color: white;
+	animation: fade 10s;
+
+
+}
+
+.fa-chevron-down {
+	font-size: 50px;
+	color: white;
+}
+
+.facts {
+	color: white;
+	font-size: 40px;
+}
+
+@keyframes fade {
+	from {
+		color: transparent;
+	}
+
+	to {
+		color: white;
+	}
+}
