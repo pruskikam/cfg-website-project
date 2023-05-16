@@ -12,6 +12,7 @@ const heading = document.querySelector('h1');
 const navigationWhatIs = document.querySelector('ul.mainnav');
 const mainnavIdeas = document.querySelector('ul.mainnavIdeas');
 
+if (heading !== null ) {
 window.addEventListener('scroll', function () {
 	let Ynumber = window.pageYOffset;
 	if (Ynumber > 60) {
@@ -22,6 +23,8 @@ window.addEventListener('scroll', function () {
 		navigationWhatIs.classList.remove('hide-text');
 	}
 });
+}
+if (mainnavIdeas!==null) {
 
 window.addEventListener('scroll', function () {
 	let Ynumber = window.pageYOffset;
@@ -31,6 +34,8 @@ window.addEventListener('scroll', function () {
 		mainnavIdeas.classList.remove('hide-text');
 	}
 });
+
+}
 
 // code for whatIs page
 
@@ -177,6 +182,7 @@ function handleNextButton() {
 	}
 }
 
+if (nextButton !==null) {
 nextButton.addEventListener('click', () => {
 	if (currentQuestionIndex < questions.length) {
 		handleNextButton();
@@ -185,6 +191,8 @@ nextButton.addEventListener('click', () => {
 	}
 });
 startQuiz();
+
+}
 
 const hamburger = document.querySelector('div.hamburger');
 const nav = document.querySelectorAll('ul.navigation');

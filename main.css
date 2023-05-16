@@ -2,13 +2,15 @@
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-	background-color:black;
-	overflow-x:hidden;
+	background-color: black;
+	overflow-x: hidden;
 	position: relative;
+	min-height: 100vh;
 }
 
 html {
@@ -33,7 +35,7 @@ ul {
 
 ul.secondNav {
 	height: 1.9em;
-	background-color: rgba(32,54,27,0.8) ;
+	background-color: rgba(32, 54, 27, 0.8);
 }
 
 li#navfeatures,
@@ -41,8 +43,6 @@ li#navmaterials,
 li#navcertifications {
 	font-size: 2rem;
 }
-
-
 
 .nav-down {
 	display: flex;
@@ -104,6 +104,8 @@ a.link {
 	line-height: 90px;
 	color: #e3e2d8;
 	text-align: center;
+	margin-top: 0;
+	
 }
 
 .main-image {
@@ -148,10 +150,9 @@ a.link {
 }
 
 .info {
-	height:100vh;
+	height: 100vh;
 	background-image: url(./img/trees-large-shade.png);
 	position: relative;
-	
 }
 
 p.info {
@@ -160,7 +161,6 @@ p.info {
 	margin: 0 10rem auto;
 	display: block;
 }
-
 
 .text-over-trees {
 	position: absolute;
@@ -188,7 +188,6 @@ h1 {
 	color: #e3e2d8;
 }
 
-
 .intro {
 	display: flex;
 	flex-direction: row;
@@ -205,7 +204,7 @@ h1 {
 	height: auto;
 	position: relative;
 	width: 80%;
-	margin:0 auto;
+	margin: 0 auto;
 	z-index: 0;
 }
 
@@ -233,8 +232,6 @@ h1 {
 	z-index: 0;
 }
 
-
-
 .hide {
 	display: none;
 	transition: 1s;
@@ -260,32 +257,27 @@ h1 {
 	list-style: none;
 }
 
-
-
-.certifications-text, .materials-text {
-	opacity:0;
+.certifications-text,
+.materials-text {
+	opacity: 0;
 }
 
-
-.certifications-text, .features-text, .materials-text {
+.certifications-text,
+.features-text,
+.materials-text {
 	background-color: #e3e2d8;
 	position: absolute;
-	height:auto;
+	height: auto;
 	width: 100%;
 }
-
-
 
 p.whatis {
 	display: block;
 	font-size: 1.4rem;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	text-justify: distribute;
 	padding: 1em 3em 1em 3em;
-
 }
-
-
 
 li#navmaterials:hover,
 li#navcertifications:hover,
@@ -302,7 +294,7 @@ li#navfeatures:hover {
 	flex-wrap: wrap;
 	max-width: 1600px;
 	width: 100%;
-	background-color:  rgb(0,1,4); 
+	background-color: rgb(0, 1, 4);
 }
 
 .inspiringNav {
@@ -317,7 +309,6 @@ li#navfeatures:hover {
 	width: 600px;
 	height: 700px;
 	perspective: 300px;
-
 }
 
 .img {
@@ -327,7 +318,6 @@ li#navfeatures:hover {
 	background-size: cover;
 	border-radius: 15px;
 	transition: 0.8s;
-	
 }
 
 .three {
@@ -343,7 +333,11 @@ li#navfeatures:hover {
 	padding: 30px;
 	border-radius: 0px;
 	text-align: center;
-	background-image:  linear-gradient(7deg, rgba(32,54,27,0.9304315476190477) 0%, rgba(232,223,223,1) 100%);
+	background-image: linear-gradient(
+		7deg,
+		rgba(32, 54, 27, 0.9304315476190477) 0%,
+		rgba(232, 223, 223, 1) 100%
+	);
 	opacity: 0;
 	transition: 0.8s;
 }
@@ -367,15 +361,29 @@ h3.gallery {
 }
 
 /* styling for ideas for every room */
-
+/* 
+.content {
+	background-color: #e3e2d8;
+	height: auto;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	z-index: 0;
+} */
 
 .room {
+	height: auto;
+	padding: 1em 3em 1em 3em;
+}
 
-	background-color: hsl(22, 15%, 89%);
+
+h3.room {
+	padding:0;
+	text-align: center;
+}
+
+.room-gallery {
 	
-	height: 400px;
-	width: 100%;
-
 }
 
 
@@ -384,27 +392,89 @@ h3.gallery {
 
 
 
-/* .image-overlay {
+
+
+
+
+
+/* styles for materials  */
+
+.image {
+	position: relative;
+	width: 95%;
+	margin: auto;
+	height: 100px;
+
+
+	
+	
+}
+
+.materials-text {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+.wool {
+	background-image: url(https://i.pinimg.com/564x/d0/43/ce/d043ce2d519dfbb48c578a6a89a7a1f6.jpg);
+}
+
+.bamboo {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/547a3834e4b053a861c4874e/e732c03d-e206-4dd8-8cad-c52bb6bc22b6/Sustainably+Chic+%7C+Sustainable+Fashion+Blog+%7C+Are+Bamboo+Clothing+%26+Products+Sustainable%3F.jpg?format=1500w);
+}
+
+
+.hemp {
+	background-image: url(https://pharmacie-kerangal.com/preparatoire/wp-content/uploads/sites/3/2020/09/closeup-feuille-marijuana-cannabis_1150-15082.jpg);
+	background-size: cover;
+}
+
+.cork {
+	background-image: url(https://i.pinimg.com/564x/b7/47/5c/b7475c5c3cbd2645c997fbbacd985091.jpg);
+}
+
+
+
+
+
+.image__overlay {
 	position: absolute;
-	top: 0;
+	top:0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #e3e2d8;
+	background: rgba(0,0,0,0.6);
+	color: white;
 	display: flex;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.5rem;
 	opacity: 0;
-	transition: opacity 0.3s;
-} */
+	transition: opacity 0.5s;
+	z-index: 9;
+	
+	
+}
 
-/* .image-overlay:hover {
+.image__overlay:hover {
 	opacity: 1;
-} */
+}
+
+.image__description {
+	font-size: 1.25em;
+	margin-top: 0.4em;
+
+}
+
+
 
 
 
@@ -414,21 +484,19 @@ h3.gallery {
 /* styling for quiz  */
 
 .app {
-	background-color:  blue;
+	background-color: blue;
 	max-width: 600px;
-	margin: 50px  auto 60px;
+	margin: 50px auto 60px;
 	border-radius: 10px solid;
 	padding: 30px;
+	
 }
 
 .quizcontent {
 	height: auto;
-	width:600px;
+	width: 600px;
 	background-color: white;
-	
 }
-
-
 
 .quiz {
 	padding: 20px 0;
@@ -437,14 +505,13 @@ h3.gallery {
 
 .quiz h2 {
 	font-size: 1.3rem;
-	color:#e3e2d8;
+	color: #e3e2d8;
 }
 
 h3.quiz {
 	font-size: 1.5rem;
 	text-align: center;
-	color:#e3e2d8;
-	
+	color: #e3e2d8;
 }
 
 .btn {
@@ -455,11 +522,11 @@ h3.quiz {
 	transition: all 0.3s;
 	cursor: pointer;
 	font-size: 1.2rem;
-	border:0px;
+	border: 0px;
 }
 
 .btn:hover:not([disabled]) {
-	background-color: rgb(177,121,71);
+	background-color: rgb(177, 121, 71);
 }
 
 .btn:disabled {
@@ -467,7 +534,7 @@ h3.quiz {
 }
 
 #next-btn {
-	background-color:#e3e2d8;
+	background-color: #e3e2d8;
 	border: 0px;
 	cursor: pointer;
 	padding: 1em;
@@ -475,21 +542,16 @@ h3.quiz {
 	display: none;
 }
 
-
-
 #next-btn:hover {
-	color:rgb(160,103,11);
+	color: rgb(160, 103, 11);
 }
 
-
 .correct {
-	background-color: rgb(52,90,59);
-	
+	background-color: rgb(52, 90, 59);
 }
 
 .incorrect {
-	background-color:tomato;
-	
+	background-color: tomato;
 }
 
 /* styling for hamburger menu */
@@ -511,7 +573,7 @@ div.line {
 	width: 450px;
 	height: 320px;
 	background-color: rgba(12, 13, 14, 0.7);
-	margin-left:10px;
+	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
 	display: none;
@@ -519,29 +581,21 @@ div.line {
 	text-transform: uppercase;
 	font-family: 'Syne', sans-serif;
 	font-size: 1.8rem;
-	
 }
 
 .sideNav a {
-	padding:1px;
-
+	padding: 1px;
 }
-
-
-
-
 
 /* exstra margin for pages other than index.html  */
 
 .expad {
 	padding-top: 60px;
-	
 }
 
 .sideNav a {
 	text-decoration: none;
 	color: #e3e2d8;
-	
 }
 
 .sideNav a:hover {
@@ -556,7 +610,7 @@ div.line {
 	display: block;
 }
 
-@media (max-width:850px) {
+@media (max-width: 850px) {
 	.hamburger {
 		display: block;
 		cursor: pointer;
@@ -575,11 +629,11 @@ div.line {
 	}
 
 	.navigation {
-		display:none;
+		display: none;
 	}
 
 	ul.mainnav {
-		display:none;
+		display: none;
 	}
 	h1.intro {
 		font-size: 2rem;
@@ -589,24 +643,12 @@ div.line {
 	}
 
 	.main-text,
-	.main-image{
+	.main-image {
 		width: 100%;
-
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width:850px) {
-
+@media (max-width: 850px) {
 	.container {
 		margin-top: 80px;
 	}
@@ -617,9 +659,8 @@ div.line {
 		width: 400px;
 		height: 200px;
 		perspective: 100px;
-	
 	}
-	
+
 	.img {
 		width: 100%;
 		height: 100%;
@@ -627,20 +668,8 @@ div.line {
 		background-size: cover;
 		border-radius: 5px;
 		transition: 0.8s;
-		
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 800px) {
 	.sideNav {
@@ -692,7 +721,3 @@ div.line {
 		color: #e3e2d8;
 	}
 }
-
-
-
-
