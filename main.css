@@ -607,11 +607,13 @@ h3.quiz {
 .correct {
 	background-color: rgba(52, 90, 59);
 	font-weight: 400;
+	color:black;
 }
 
 .incorrect {
 	background-color: tomato;
 	font-weight: 400;
+	color:black;
 	
 }
 
