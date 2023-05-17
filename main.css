@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
 
 body {
@@ -63,7 +63,9 @@ a.link {
 	position: relative;
 	text-decoration: none;
 	color: #e3e2d8;
-	font-family: 'Syne', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2rem;
 }
 
 .link:hover {
@@ -105,7 +107,6 @@ a.link {
 	color: #e3e2d8;
 	text-align: center;
 	margin-top: 0;
-	
 }
 
 .main-image {
@@ -153,19 +154,46 @@ a.link {
 	height: 100vh;
 	background-image: url(./img/trees-large-shade.png);
 	position: relative;
+	animation: fade 2s;
 }
+
+.back {
+	font-family: 'Monserrat', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	margin-left: 50%;
+	color: white;
+	padding-top: 10px;
+	font-size: 1.2rem;
+	animation: fade 2s;
+}
+
+.back:hover {
+	font-weight: 400;
+}
+
+
+
+
+
+
 
 p.info {
 	height: 70%;
-	min-width: 400px;
-	margin: 0 10rem auto;
+	min-width: 200px;
 	display: block;
+	font-size: 1.6rem;
+	text-align: center;
+	color: hsl(24, 78%, 39%);
 }
+
+
 
 .text-over-trees {
 	position: absolute;
 	background-color: transparent;
-	font-size: 1.9rem;
+	font-size: 1.8rem;
 	padding: 200px 300px 0px 300px;
 	color: #e3e2d8;
 	animation: fade 10s;
@@ -275,15 +303,27 @@ p.whatis {
 	display: block;
 	font-size: 1.4rem;
 	line-height: 1.8em;
-	text-justify: distribute;
+	text-justify:distribute;
 	padding: 1em 3em 1em 3em;
 }
+
+h3.whatis {
+	font-size: 1.8rem;
+	text-align: center;
+	text-decoration: overline;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+
+
+
 
 li#navmaterials:hover,
 li#navcertifications:hover,
 li#navfeatures:hover {
 	color: hsl(24, 78%, 39%);
 	cursor: pointer;
+	font-weight: 200;
 }
 
 /* page - inspiring projects  */
@@ -298,14 +338,14 @@ li#navfeatures:hover {
 }
 
 .inspiringNav {
-	height: 60px;
+	height: 50px;
 	background-color: black;
 	margin-bottom: 50px;
 }
 
 .card {
 	position: relative;
-	margin: 40px 60px;
+	margin: 40px 40px;
 	width: 600px;
 	height: 700px;
 	perspective: 300px;
@@ -320,8 +360,29 @@ li#navfeatures:hover {
 	transition: 0.8s;
 }
 
-.three {
-	background-image: url('./img/mountains-small.jpg');
+.one {
+	background-image: url('https://res.klook.com/image/upload/v1616664238/hotel/sdmxcnk9pjm7rrrzugbc.jpg');
+}
+
+.two {
+	background-image: url('https://ecoedition.net/wp-content/uploads/2020/11/Eco-Edition_Nina-Co_Silo-Restaurant_Architecture-sustainability-6-min.jpg');
+
+}
+.three { 
+	background-image: url('https://ecoedition.net/wp-content/uploads/2021/03/Eco-Edition_In-Pretty-Good-Shape_Moar-Gut-Childcare_Sustainable-architecture-interiors-2.jpg');
+
+}
+
+.four {
+	background-image: url('https://i.pinimg.com/originals/6f/39/1c/6f391ca6faf1d004ae30e10fcaffca42.jpg');
+
+}
+
+p.inspiring-projects {
+	line-height: 1.4rem;
+	font-size: 1.2rem;
+	
+
 }
 
 .text {
@@ -333,18 +394,19 @@ li#navfeatures:hover {
 	padding: 30px;
 	border-radius: 0px;
 	text-align: center;
-	background-image: linear-gradient(
-		7deg,
-		rgba(32, 54, 27, 0.9304315476190477) 0%,
-		rgba(232, 223, 223, 1) 100%
-	);
+	background-image: linear-gradient(to right, #ece9e6, #ffffff);
 	opacity: 0;
-	transition: 0.8s;
+	transition: 0.5s;
+	text-align: right;
 }
 
-h3.gallery {
-	margin-top: 450px;
+h3.inspiring-gallery {
+	margin-top: 100px;
 	margin-bottom: 20px;
+	font-family:'Monserrat',sans-serif;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	text-align: end;
 }
 
 .card:hover .text {
@@ -352,50 +414,61 @@ h3.gallery {
 	opacity: 1;
 }
 
-.card:hover .three {
+.card:hover .shuffle {
 	animation: up 0.8s;
 }
 
-.card:hover .text-three {
+.card:hover .text-shuffle {
 	animation: down 0.8s;
 }
 
+
+
+
+
+
 /* styling for ideas for every room */
-/* 
-.content {
-	background-color: #e3e2d8;
-	height: auto;
-	position: relative;
-	width: 80%;
-	margin: 0 auto;
-	z-index: 0;
-} */
-
-.room {
-	height: auto;
-	padding: 1em 3em 1em 3em;
-}
 
 
-h3.room {
-	padding:0;
-	text-align: center;
-}
 
-.room-gallery {
+
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:1rem;
 	
 }
+img.room {
+	max-width: 100%;
+	min-width: 40vw;
+	
+}
+.image-room {
+	flex-basis: 40%;
 
+}
+.text-room {
+	font-size: 20px;
+	padding-left: 20px;
+	width: 40%;
+}
 
+ul.room {
+	display: block;
+	padding-left: 1em;
+	list-style-type: square;
+	line-height: 2rem;
 
+}
 
-
-
-
-
-
-
-
+h3.room {
+	font-family: 'Monserrat', sans-serif;
+	text-transform: uppercase;
+	
+}
 
 /* styles for materials  */
 
@@ -404,10 +477,6 @@ h3.room {
 	width: 95%;
 	margin: auto;
 	height: 100px;
-
-
-	
-	
 }
 
 .materials-text {
@@ -419,8 +488,6 @@ h3.room {
 	display: block;
 	width: 100%;
 	height: 100%;
-	
-	
 }
 
 .wool {
@@ -431,7 +498,6 @@ h3.room {
 	background-image: url(https://images.squarespace-cdn.com/content/v1/547a3834e4b053a861c4874e/e732c03d-e206-4dd8-8cad-c52bb6bc22b6/Sustainably+Chic+%7C+Sustainable+Fashion+Blog+%7C+Are+Bamboo+Clothing+%26+Products+Sustainable%3F.jpg?format=1500w);
 }
 
-
 .hemp {
 	background-image: url(https://pharmacie-kerangal.com/preparatoire/wp-content/uploads/sites/3/2020/09/closeup-feuille-marijuana-cannabis_1150-15082.jpg);
 	background-size: cover;
@@ -441,17 +507,13 @@ h3.room {
 	background-image: url(https://i.pinimg.com/564x/b7/47/5c/b7475c5c3cbd2645c997fbbacd985091.jpg);
 }
 
-
-
-
-
 .image__overlay {
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0, 0, 0, 0.6);
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -460,8 +522,6 @@ h3.room {
 	opacity: 0;
 	transition: opacity 0.5s;
 	z-index: 9;
-	
-	
 }
 
 .image__overlay:hover {
@@ -471,31 +531,28 @@ h3.room {
 .image__description {
 	font-size: 1.25em;
 	margin-top: 0.4em;
-
 }
-
-
-
-
-
-
-
 
 /* styling for quiz  */
 
 .app {
-	background-color: blue;
+	background-color: rgba(32, 54, 27, 0.8);
 	max-width: 600px;
 	margin: 50px auto 60px;
 	border-radius: 10px solid;
 	padding: 30px;
-	
+	border: 1px solid  #e3e2d8;
 }
 
 .quizcontent {
 	height: auto;
 	width: 600px;
-	background-color: white;
+	background-color: #e3e2d8;
+
+}
+
+.main {
+	height: 72vh;
 }
 
 .quiz {
@@ -512,6 +569,7 @@ h3.quiz {
 	font-size: 1.5rem;
 	text-align: center;
 	color: #e3e2d8;
+	
 }
 
 .btn {
@@ -522,15 +580,20 @@ h3.quiz {
 	transition: all 0.3s;
 	cursor: pointer;
 	font-size: 1.2rem;
-	border: 0px;
+	border: 1px white solid;
+	
 }
 
 .btn:hover:not([disabled]) {
-	background-color: rgb(177, 121, 71);
+	background-color: rgba(177, 121, 71,0.3);
 }
+
+
 
 .btn:disabled {
 	cursor: no-drop;
+	
+	
 }
 
 #next-btn {
@@ -540,18 +603,27 @@ h3.quiz {
 	padding: 1em;
 	margin: 1em auto 0;
 	display: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+	border-radius: 24%;
+	font-size: 1.2rem;
 }
 
+
+
 #next-btn:hover {
-	color: rgb(160, 103, 11);
+	background-color: hsl(24, 78%, 39%);
 }
 
 .correct {
-	background-color: rgb(52, 90, 59);
+	background-color: rgba(52, 90, 59);
+	font-weight: 400;
 }
 
 .incorrect {
 	background-color: tomato;
+	font-weight: 400;
+	
 }
 
 /* styling for hamburger menu */
@@ -570,22 +642,27 @@ div.line {
 }
 
 .sideNav {
-	width: 450px;
+	width: 100%;
 	height: 320px;
-	background-color: rgba(12, 13, 14, 0.7);
-	margin-left: 10px;
+	background-color: rgba(12, 13, 14,1);
 	display: flex;
 	flex-direction: column;
 	display: none;
+	margin-top: 60px;
 	flex-wrap: wrap;
 	text-transform: uppercase;
-	font-family: 'Syne', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	font-size: 1.8rem;
+	
 }
 
 .sideNav a {
 	padding: 1px;
 }
+
+
+
 
 /* exstra margin for pages other than index.html  */
 
@@ -600,7 +677,8 @@ div.line {
 
 .sideNav a:hover {
 	text-decoration: none;
-	color: orangered;
+	font-weight: 500;
+	color: hsl(24, 78%, 39%);
 }
 
 .sideNav li {
@@ -619,13 +697,20 @@ div.line {
 	.nav-bar {
 		display: none;
 	}
+	.sideNav {
+		position: fixed;
+		top:0;
+		left:0;
+		z-index: 1;
+		
+	}
 
 	p.first {
-		font-size: 1rem;
+		font-size: 1.4rem;
 	}
 
 	p.second {
-		font-size: 1rem;
+		font-size: 1.rem;
 	}
 
 	.navigation {
@@ -646,6 +731,26 @@ div.line {
 	.main-image {
 		width: 100%;
 	}
+
+	.facts {
+		font-size: 1.2rem;
+		background-color: #e3e2d8;
+		color: rgb(8, 19, 4);
+		padding:20px;
+		margin:10px;
+		width: auto;
+		min-width: 300px;
+	}
+
+	.didyou {
+		margin-top: 10px;
+	}
+
+	.back {
+		color:black;
+	}
+
+
 }
 
 @media (max-width: 850px) {
@@ -676,6 +781,22 @@ div.line {
 		display: none;
 	}
 }
+
+
+
+@media (max-width:1000px) {
+	h1 {
+		font-size:1.6rem;
+		font-weight:300;
+	}
+
+	li#navcertifications,li#navfeatures,li#navmaterials {
+		font-size: 1.2rem;
+		line-height:30px;
+	}
+}
+
+
 
 @keyframes up {
 	0% {

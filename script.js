@@ -80,31 +80,60 @@ if (materialsnav != null) {
 
 const questions = [
 	{
-		question: 'lorem blelelelelelelellelelelelelelelelellelele?',
+		question: 'What is the only material that can be 100% recycled?',
 		answers: [
-			{ text: 'malinowe', correct: false },
-			{ text: 'bananowe', correct: false },
-			{ text: 'czekoladowe', correct: false },
-			{ text: 'pistacjowe', correct: true },
+			{ text: 'bubble wrap', correct: false },
+			{ text: 'paper towels', correct: false },
+			{ text: 'cling film', correct: false },
+			{ text: 'aluminium cans', correct: true },
 		],
 	},
 	{
-		question: 'Which movie is the best?',
+		question: 'what percent of the worlds plastic is recycled?',
 		answers: [
-			{ text: 'Fargo', correct: false },
-			{ text: 'Zootopia', correct: false },
-			{ text: 'Seksmisja', correct: false },
-			{ text: 'dupasraka', correct: true },
+			{ text: '46%', correct: false },
+			{ text: '50%', correct: false },
+			{ text: '20%', correct: false },
+			{ text: '9%', correct: true },
 		],
 	},
 
 	{
-		question: 'Which colour is the best?',
+		question: 'Approximately, how many furniture pieces are being discarded yearly in the UK alone?',
 		answers: [
-			{ text: 'niebieski', correct: false },
-			{ text: 'filetowy', correct: false },
-			{ text: 'czekoladowy', correct: false },
-			{ text: 'zielony', correct: true },
+			{ text: '500.000', correct: false },
+			{ text: '60.000', correct: false },
+			{ text: '5.000', correct: false },
+			{ text: '22.000.000', correct: true },
+		],
+	},
+
+	{
+		question: 'When a tonne of paper is recycled, how many trees are saved?',
+		answers: [
+			{ text: 'one', correct: false },
+			{ text: '8', correct: false },
+			{ text: '17', correct: false },
+			{ text: '30', correct: true },
+		],
+	},
+	{
+		question: 'In the UK, 275,000 tonnes of plastic are used each year - what would be the equivalent of that in bottles/day?',
+		answers: [
+			{ text: '400.000 bottles per day', correct: false },
+			{ text: '15.000.000 plastic bottles per day', correct: true },
+			{ text: '100.000 plastic bottles per day', correct: false },
+			{ text: '30.000 bottles per day', correct: false },
+		],
+	},
+
+	{
+		question: 'Every Sunday nearly 90% of newspapers are thrown away in Britain, which is the equivalent of throwing how many trees into landfill?',
+		answers: [
+			{ text: '400.000 trees', correct: false },
+			{ text: '500.000 trees', correct: true },
+			{ text: '100.000 trees', correct: false },
+			{ text: '30.000 trees', correct: false },
 		],
 	},
 ];
@@ -206,6 +235,22 @@ const navDown = () => {
 	heading2.classList.add('hide');
 };
 
-if (hamburger != null) {
+if (hamburger !== null) {
 	hamburger.addEventListener('click', navDown);
 }
+
+
+// interesting fact 
+
+
+const facts = ['styrofoam never decomposes', 'recycling one ton of paper saves 7,000 gallons of water!', 'only 23% of disposable water bottles are recycled'];
+const displayFact = document.querySelector('p.info');
+console.log(displayFact);
+
+const depressingFact = () => {
+    let number = Math.floor(Math.random() * facts.length)
+	displayFact.textContent = facts[number];
+	
+};
+
+depressingFact();
