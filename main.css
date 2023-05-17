@@ -173,12 +173,6 @@ a.link {
 	font-weight: 400;
 }
 
-
-
-
-
-
-
 p.info {
 	height: 70%;
 	min-width: 200px;
@@ -381,7 +375,6 @@ li#navfeatures:hover {
 p.inspiring-projects {
 	line-height: 1.4rem;
 	font-size: 1.2rem;
-	
 
 }
 
@@ -428,10 +421,6 @@ h3.inspiring-gallery {
 
 
 /* styling for ideas for every room */
-
-
-
-
 
 
 .container {
@@ -689,12 +678,6 @@ div.line {
 }
 
 
-@media (max-width:1100px) {
-	
-}
-
-
-
 
 @media (max-width: 850px) {
 	.hamburger {
@@ -782,12 +765,30 @@ div.line {
 		border-radius: 5px;
 		transition: 0.8s;
 	}
+
+	h3.inspiring-gallery {
+		font-size: 9px;
+		margin-top: 5px;
+	}
+
+	p.inspiring-projects {
+		font-size: 8px;
+		line-height:0.5rem;
+		
+
+
+	}
+
+	h3.inspiring-gallery {
+		margin-top: 2px;
+	}
 }
 
 @media (min-width: 800px) {
 	.sideNav {
 		display: none;
 	}
+
 }
 
 

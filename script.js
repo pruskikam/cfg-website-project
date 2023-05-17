@@ -37,6 +37,8 @@ window.addEventListener('scroll', function () {
 
 }
 
+console.log(window.pageYOffset);
+
 // code for whatIs page
 
 const featuresnav = document.querySelector('#navfeatures');
@@ -65,14 +67,14 @@ const showmaterials = () => {
 	certifications.style.opacity = 0;
 };
 
-if (featuresnav != null) {
+if (featuresnav !== null) {
 	featuresnav.addEventListener('mouseover', showfeatures);
 }
-if (certificationsnav != null) {
+if (certificationsnav !== null) {
 	certificationsnav.addEventListener('mouseover', showcertifications);
 }
 
-if (materialsnav != null) {
+if (materialsnav !== null) {
 	materialsnav.addEventListener('mouseover', showmaterials);
 }
 
@@ -243,14 +245,15 @@ if (hamburger !== null) {
 // interesting fact 
 
 
-const facts = ['styrofoam never decomposes', 'recycling one ton of paper saves 7,000 gallons of water!', 'only 23% of disposable water bottles are recycled'];
+const facts = ['styrofoam never decomposes', 'recycling one ton of paper saves 7,000 gallons of water!', 'only 23% of disposable water bottles are recycled', 'A hot water faucet that leaks one drop per second can add up to 165 gallons a month','If we keep consuming plastic at the same rate, its estimated by 2050 there will be more plastic in the ocean by weight than fish.'];
 const displayFact = document.querySelector('p.info');
 console.log(displayFact);
+
 
 const depressingFact = () => {
     let number = Math.floor(Math.random() * facts.length)
 	displayFact.textContent = facts[number];
 	
 };
-
-depressingFact();
+if (displayFact!==null) {
+depressingFact();}
