@@ -654,6 +654,58 @@ div.line {
 
 
 
+table.table {
+	width: 60%;
+	margin: 100px auto;
+	padding: 10px;
+	
+}
+
+th {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+body.recycle {
+	background-image: url(./img/leaves_large.jpg);
+	font-family: 'Roboto', sans-serif;
+
+	
+}
+
+th, td {
+	background-color:  #e3e2d8;
+}
+
+button.backto {
+	width:auto;
+	display: block;
+	margin: 0 auto ;
+	font-size: 1.2rem;
+}
+
+
+
+.help {
+	font-size: 1.4rem;
+	display: block;
+	margin: 0 auto ;
+	padding: 10px;
+	
+	
+}
+
+.help:hover {
+	background-color: hsl(24, 78%, 39%);
+	color: white;
+	font-weight:200;
+	
+}
+
+/* */
+
+
+
 
 /* exstra margin for pages other than index.html  */
 
